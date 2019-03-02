@@ -23,7 +23,12 @@ namespace c0732134_Week08
 
         static void Main(string[] args)
         {
-            
+            MyDelegate f = func1;
+            Console.WriteLine("Result: " + f(10, 20));
+            f = func2;
+            Console.WriteLine("Result: " + f(10, 20));
+
+            Console.ReadLine();
         }
     }
 }
